@@ -40,6 +40,13 @@ I care about one question above all: **where is the bottleneck, and can I prove 
 
 ---
 
+### 🏆 Recognition
+
+- 🥇 **HackUMass XII — Best Embedded System** · [*WorldWide Rover*](https://devpost.com/software/worldwide-rover) — a globally-controllable autonomous rover with real-time web control (Raspberry Pi + Arduino, Flask/React)
+- 🥇 **HackUMass X — Best Hardware Hack & Best Circuit Hack** · [*4Sight*](https://github.com/manunicholasjacob/4sight) — a haptic spatial-awareness wand for the visually impaired (Pi Pico, CircuitPython)
+
+---
+
 ### 🧰 Toolbox
 
 <p>
