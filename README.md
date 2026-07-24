@@ -9,6 +9,7 @@
   <a href="http://manunicholasjacob.com/"><img src="https://img.shields.io/badge/Website-manunicholasjacob.com-1f6feb?style=flat"/></a>
   <a href="https://www.linkedin.com/in/manu-nicholas-jacob/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white"/></a>
   <a href="https://orcid.org/0009-0007-6589-6572"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=flat&logo=orcid&logoColor=white"/></a>
+  <a href="https://scholar.google.com/citations?user=inrrUQIAAAAJ&hl=en"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=flat&logo=googlescholar&logoColor=white"/></a>
   <img src="https://komarev.com/ghpvc/?username=manunicholasjacob&color=1f6feb&style=flat&label=Profile+views"/>
   <a href="https://github.com/manunicholasjacob?tab=followers"><img src="https://img.shields.io/github/followers/manunicholasjacob?style=flat&color=1f6feb&label=Followers"/></a>
 </p>
@@ -28,7 +29,19 @@ I care about one question above all: **where is the bottleneck, and can I prove 
 
 ---
 
-### 📄 Selected research (Raspberry Pi 5 / ARM Cortex-A76)
+### 📚 Publications & preprints
+
+Edge-AI / Raspberry Pi 5 preprints (2025) · full list on **[Google Scholar](https://scholar.google.com/citations?user=inrrUQIAAAAJ&hl=en)** · **[TechRxiv](https://www.techrxiv.org/action/doSearch?ContribAuthorRaw=Jacob%2C+Manu+Nicholas)** · **[ORCID](https://orcid.org/0009-0007-6589-6572)**
+
+- **Thermo-Aware Anytime Inference on Raspberry Pi 5** — uncertainty-aware control + full-stack reproducibility
+- **ThermML@Edge** — thermally-robust inference via precision, threading & policy design
+- **RobustML@Edge** — energy–latency–accuracy trade-offs under distribution shift
+- **Lightweight ML for Edge Devices** — classical baselines vs. TinyCNN with INT8 quantization
+- **Power-Aware Image Classification on a Low-Cost Edge SBC** — reproducible micro-benchmark (MobileNetV3-Small, ResNet-18)
+
+---
+
+### 📄 Selected code & artifacts (Raspberry Pi 5 / ARM Cortex-A76)
 
 | Project | What it shows |
 |---|---|
