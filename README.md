@@ -4,7 +4,7 @@
   <img alt="Manu Nicholas Jacob. Edge AI, computer architecture, LLM inference." src="https://raw.githubusercontent.com/manunicholasjacob/manunicholasjacob/main/assets/banner-light.png">
 </picture>
 
-**Edge AI, computer architecture, and LLM inference.** I measure where the bottleneck actually is, on hardware I can put an ammeter on, and I publish the data whether or not it agrees with me.
+I measure where the bottleneck actually is, on hardware I can put an ammeter on, and I publish the data whether or not it agrees with me.
 
 [Website](http://manunicholasjacob.com/) · [ORCID 0009-0007-6589-6572](https://orcid.org/0009-0007-6589-6572) · [Google Scholar](https://scholar.google.com/citations?user=inrrUQIAAAAJ&hl=en)
 
