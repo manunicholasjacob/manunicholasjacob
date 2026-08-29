@@ -1,91 +1,47 @@
-<h1 align="center">Manu Nicholas Jacob</h1>
+# Manu Nicholas Jacob
 
-<p align="center">
-  <b>Hardware Engineer @ Dell Technologies</b> — Systems Development & Root-Cause Engineering<br/>
-  Measurement-driven <b>edge-AI</b> &amp; <b>computer-architecture</b> research · systems, performance &amp; reliability
-</p>
+**Edge AI, computer architecture, and LLM inference.** I measure where the bottleneck actually is, on hardware I can put an ammeter on, and I publish the data whether or not it agrees with me.
 
-<p align="center">
-  <a href="http://manunicholasjacob.com/"><img src="https://img.shields.io/badge/Website-manunicholasjacob.com-1f6feb?style=flat"/></a>
-  <a href="https://www.linkedin.com/in/manu-nicholas-jacob/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white"/></a>
-  <a href="https://orcid.org/0009-0007-6589-6572"><img src="https://img.shields.io/badge/ORCID-A6CE39?style=flat&logo=orcid&logoColor=white"/></a>
-  <a href="https://scholar.google.com/citations?user=inrrUQIAAAAJ&hl=en"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=flat&logo=googlescholar&logoColor=white"/></a>
-  <img src="https://komarev.com/ghpvc/?username=manunicholasjacob&color=1f6feb&style=flat&label=Profile+views"/>
-  <a href="https://github.com/manunicholasjacob?tab=followers"><img src="https://img.shields.io/github/followers/manunicholasjacob?style=flat&color=1f6feb&label=Followers"/></a>
-</p>
+[Website](http://manunicholasjacob.com/) · [ORCID 0009-0007-6589-6572](https://orcid.org/0009-0007-6589-6572) · [Google Scholar](https://scholar.google.com/citations?user=inrrUQIAAAAJ&hl=en)
+
+Electrical and computer engineer (UMass Amherst), based in Austin. Hardware engineer at Dell by day, working on enterprise AI-server platforms, GPU and PCIe subsystems, and root-cause work. The research below is my own, run on my own hardware.
 
 ---
 
-### About
+### Tools
 
-Electrical & Computer Engineer (UMass Amherst) working at the intersection of **enterprise hardware, AI infrastructure, and embedded/edge systems**. By day I validate enterprise AI-server platforms at Dell — GPU/PCIe subsystems, system-level debugging, root-cause and reliability engineering. On the side I run a small **edge-AI systems research** program on ARM hardware: rooflines, the memory wall, quantization, and thermal behavior — all measured, reproducible, and written up.
-
-I care about one question above all: **where is the bottleneck, and can I prove it with numbers?**
-
-- 🔬 **Focus:** computer architecture · performance engineering · edge AI · thermal & reliability · reproducible benchmarking
-- 🛠️ **Building:** a home lab (2× Cisco servers, a Raspberry Pi 5 fleet, and more) for hands-on systems experiments
-- 💡 **Inventor:** 1 authorized U.S. patent filing through Dell, with ongoing invention work
-- 🎯 **Goal:** deep technical + research + leadership — a systems engineer who ships measurements, not opinions
-
----
-
-### 📚 Publications & preprints
-
-Edge-AI / Raspberry Pi 5 preprints (2025) · full list on **[Google Scholar](https://scholar.google.com/citations?user=inrrUQIAAAAJ&hl=en)** · **[TechRxiv](https://www.techrxiv.org/action/doSearch?ContribAuthorRaw=Jacob%2C+Manu+Nicholas)** · **[ORCID](https://orcid.org/0009-0007-6589-6572)**
-
-- **Thermo-Aware Anytime Inference on Raspberry Pi 5** — uncertainty-aware control + full-stack reproducibility
-- **ThermML@Edge** — thermally-robust inference via precision, threading & policy design
-- **RobustML@Edge** — energy–latency–accuracy trade-offs under distribution shift
-- **Lightweight ML for Edge Devices** — classical baselines vs. TinyCNN with INT8 quantization
-- **Power-Aware Image Classification on a Low-Cost Edge SBC** — reproducible micro-benchmark (MobileNetV3-Small, ResNet-18)
-
----
-
-### 📄 Selected code & artifacts (Raspberry Pi 5 / ARM Cortex-A76)
-
-| Project | What it shows |
+| | |
 |---|---|
-| [**The INT8 Configuration Cliff**](https://github.com/manunicholasjacob/rpi5-quantization-benchmark) | Export format & graph-optimization level — *not weights* — drive a **~40× INT8 latency swing** on Cortex-A76. *(IEEE ESL, submitted)* |
-| [**Latency-Elastic Edge Inference**](https://github.com/manunicholasjacob/latency-elastic-edge-inference) | An MPC thread allocator cuts **p99 tail latency 3.4×** and drives 80 ms-SLO violations to **0%**. *(FGCS, submitted)* |
-| [**pi5-thermal-proxy**](https://github.com/manunicholasjacob/pi5-thermal-proxy) | Software-only thermal proxy: a cross-validated CPU-temperature coupling law + open 13-hour telemetry dataset. *(IEEE ESL)* |
-| [**Edge Thermal-Margin Control**](https://github.com/manunicholasjacob/edge-thermal-margin-control) | When convex thermal-margin allocation helps — and when it hurts — for multi-tenant edge inference. *(IEEE ESL)* |
-| [**Edge SBC Reliability Lab**](https://github.com/manunicholasjacob/edge-sbc-reliability-lab) | Multi-runtime benchmarking & reliability framework: thermal drift, sustained-workload testing, reproducible outputs. |
+| [**llama-roofline**](https://github.com/manunicholasjacob/llama-roofline) | Is your `llama.cpp` decode memory-bandwidth-bound? Measure it in one command. Reports the operating point next to every fitted bandwidth, and refuses to quote a number for silicon it has not measured. [`10.5281/zenodo.21842493`](https://doi.org/10.5281/zenodo.21842493) |
+| [**ml-systems-lab**](https://github.com/manunicholasjacob/ml-systems-lab) | One YAML config drives `llama.cpp` and ONNX Runtime sweeps across laptops, a Raspberry Pi over SSH, and GPUs, with TTFT, throughput and per-rail telemetry. [`10.5281/zenodo.21867055`](https://doi.org/10.5281/zenodo.21867055) |
+| [**qgemv-roofline**](https://github.com/manunicholasjacob/qgemv-roofline) | A quantized GEMV kernel ladder measured against its own bandwidth roof: 13 CUDA kernels plus Triton for batch-1 LLM decode over ggml `q8_0`/`q4_0`, across five NVIDIA GPUs from sm_60 to sm_89. |
+
+### Measurement studies
+
+Each of these is a reproducible artifact with its data, its harness and a DOI, not a figure in a PDF.
+
+| | |
+|---|---|
+| [**The memory wall at the edge of language**](https://github.com/manunicholasjacob/edge-llm-memory-wall) | Edge LLM decode is bandwidth-bound with R² = 0.994, and the KV cache hits a capacity wall before compute does. [`10.5281/zenodo.21844855`](https://doi.org/10.5281/zenodo.21844855) |
+| [**The break-even parallel speedup**](https://github.com/manunicholasjacob/edge-breakeven-speedup) | Multithreading saves energy exactly when parallel speedup beats the power ratio. 831 PMIC-measured runs showing the power ratio is a board constant while the speedup is a model property. [`10.5281/zenodo.21987261`](https://doi.org/10.5281/zenodo.21987261) |
+| [**Your quantization format is not free**](https://github.com/manunicholasjacob/edge-format-tax) | Same-size, same-label GGUF files decode very differently on edge CPUs. Provenance changes layout, and format rankings do not transfer across cores. [`10.5281/zenodo.21938812`](https://doi.org/10.5281/zenodo.21938812) |
+| [**The cold-start tax**](https://github.com/manunicholasjacob/edge-cold-start-tax) | What duty-cycled wake actually costs, and the eviction cliff behind it. [`10.5281/zenodo.21844857`](https://doi.org/10.5281/zenodo.21844857) |
+| [**gguf-faultscope**](https://github.com/manunicholasjacob/gguf-faultscope) | What one flipped bit does to a quantized language model, and where in the file it has to land to matter. [`10.5281/zenodo.22163327`](https://doi.org/10.5281/zenodo.22163327) |
+
+Full list of artifacts and manuscripts: [manunicholasjacob.com](http://manunicholasjacob.com/) · [ORCID](https://orcid.org/0009-0007-6589-6572)
 
 ---
 
-### 🏆 Recognition
+### Upstream
 
-- 🥇 **HackUMass XII — Best Embedded System** · [*WorldWide Rover*](https://devpost.com/software/worldwide-rover) — a globally-controllable autonomous rover with real-time web control (Raspberry Pi + Arduino, Flask/React)
-- 🥇 **HackUMass X — Best Hardware Hack & Best Circuit Hack** · [*4Sight*](https://github.com/manunicholasjacob/4sight) — a haptic spatial-awareness wand for the visually impaired (Pi Pico, CircuitPython)
+Merged into [NVIDIA/garak](https://github.com/NVIDIA/garak): a config-root fix in `goodside.RileyIsnt`, an ASCII-selection guard in `badchars`, and a restored unreachable-error path in `load_plugin`. The first shipped in garak v0.16.0.
 
----
+Open in [ai-dynamo/aiperf](https://github.com/ai-dynamo/aiperf): making the `crick` dependency optional so `pip install aiperf` needs no C toolchain on aarch64, a host-telemetry collector category with a RAPL backend, and two defects found by building against the code rather than reading it.
 
-### 🧰 Toolbox
-
-<p>
-  <img src="https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white"/>
-  <img src="https://img.shields.io/badge/C-00599C?style=flat&logo=c&logoColor=white"/>
-  <img src="https://img.shields.io/badge/C++-00599C?style=flat&logo=cplusplus&logoColor=white"/>
-  <img src="https://img.shields.io/badge/ONNX%20Runtime-005CED?style=flat&logo=onnx&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black"/>
-  <img src="https://img.shields.io/badge/perf-0088CC?style=flat&logo=linux&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat&logo=raspberrypi&logoColor=white"/>
-  <img src="https://img.shields.io/badge/ARM-0091BD?style=flat&logo=arm&logoColor=white"/>
-  <img src="https://img.shields.io/badge/LaTeX-008080?style=flat&logo=latex&logoColor=white"/>
-</p>
-
-*Enterprise hardware · PCIe · GPUs · roofline modeling · hardware performance counters · validation & diagnostics automation*
+Also filing measurement-backed issues against [llama.cpp](https://github.com/ggml-org/llama.cpp) and [vLLM](https://github.com/vllm-project/vllm), and reviewing for the [Journal of Open Source Software](https://joss.theoj.org/).
 
 ---
 
-<p align="center">
-  <img height="170" src="https://github-readme-stats-git-master-rickstaa.vercel.app/api?username=manunicholasjacob&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true" />
-  <img height="170" src="https://github-readme-stats-git-master-rickstaa.vercel.app/api/top-langs/?username=manunicholasjacob&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" />
-</p>
+### How I work
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=manunicholasjacob&theme=tokyonight&hide_border=true" />
-</p>
-
-<p align="center"><sub>Enterprise hardware by day · edge-AI systems research by night · always chasing the bottleneck.</sub></p>
+Measure on real hardware. State the operating point. Publish the rejected hypotheses next to the confirmed ones, and retract in public when a result does not survive re-checking.
