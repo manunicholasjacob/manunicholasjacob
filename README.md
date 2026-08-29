@@ -12,9 +12,9 @@ Electrical and computer engineer (UMass Amherst), based in Austin. Hardware engi
 
 | | |
 |---|---|
-| [**llama-roofline**](https://github.com/manunicholasjacob/llama-roofline) | Is your `llama.cpp` decode memory-bandwidth-bound? Measure it in one command. Reports the operating point next to every fitted bandwidth, and refuses to quote a number for silicon it has not measured. [`10.5281/zenodo.21842493`](https://doi.org/10.5281/zenodo.21842493) |
-| [**ml-systems-lab**](https://github.com/manunicholasjacob/ml-systems-lab) | One YAML config drives `llama.cpp` and ONNX Runtime sweeps across laptops, a Raspberry Pi over SSH, and GPUs, with TTFT, throughput and per-rail telemetry. [`10.5281/zenodo.21867055`](https://doi.org/10.5281/zenodo.21867055) |
-| [**qgemv-roofline**](https://github.com/manunicholasjacob/qgemv-roofline) | A quantized GEMV kernel ladder measured against its own bandwidth roof: 13 CUDA kernels plus Triton for batch-1 LLM decode over ggml `q8_0`/`q4_0`, across five NVIDIA GPUs from sm_60 to sm_89. |
+| [**llama‑roofline**](https://github.com/manunicholasjacob/llama-roofline) | Is your `llama.cpp` decode memory-bandwidth-bound? Measure it in one command. Reports the operating point next to every fitted bandwidth, and refuses to quote a number for silicon it has not measured. [`10.5281/zenodo.21842493`](https://doi.org/10.5281/zenodo.21842493) |
+| [**ml‑systems‑lab**](https://github.com/manunicholasjacob/ml-systems-lab) | One YAML config drives `llama.cpp` and ONNX Runtime sweeps across laptops, a Raspberry Pi over SSH, and GPUs, with TTFT, throughput and per-rail telemetry. [`10.5281/zenodo.21867055`](https://doi.org/10.5281/zenodo.21867055) |
+| [**qgemv‑roofline**](https://github.com/manunicholasjacob/qgemv-roofline) | A quantized GEMV kernel ladder measured against its own bandwidth roof: 13 CUDA kernels plus Triton for batch-1 LLM decode over ggml `q8_0`/`q4_0`, across five NVIDIA GPUs from sm_60 to sm_89. |
 
 ### Measurement studies
 
