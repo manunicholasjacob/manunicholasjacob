@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/manunicholasjacob/manunicholasjacob/main/assets/banner-dark.png">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/manunicholasjacob/manunicholasjacob/main/assets/banner-light.png">
-  <img alt="Manu Nicholas Jacob. Edge AI, computer architecture, LLM inference." src="https://raw.githubusercontent.com/manunicholasjacob/manunicholasjacob/main/assets/banner-light.png">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/manunicholasjacob/manunicholasjacob/main/assets/banner-dark.png?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/manunicholasjacob/manunicholasjacob/main/assets/banner-light.png?v=2">
+  <img alt="Manu Nicholas Jacob. Edge AI, computer architecture, LLM inference." src="https://raw.githubusercontent.com/manunicholasjacob/manunicholasjacob/main/assets/banner-light.png?v=2">
 </picture>
 
 I measure where the bottleneck actually is, on hardware I can put an ammeter on, and I publish the data whether or not it agrees with me.
