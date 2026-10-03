@@ -49,14 +49,17 @@ What one flipped bit does to a quantized model, and where in the file it has to 
 **[NVIDIA/garak](https://github.com/NVIDIA/garak)** · three merged<br>
 A `config_root` fix in `goodside.RileyIsnt`, an ASCII-selection guard in `badchars`, and a restored unreachable-error path in `load_plugin`. The first shipped in garak v0.16.0.
 
-**[ai-dynamo/aiperf](https://github.com/ai-dynamo/aiperf)** · open<br>
-Making `crick` optional so `pip install aiperf` needs no C toolchain on aarch64, and a host-telemetry collector category with a RAPL backend, because a CPU-only run currently reports no energy at all. Two of the open PRs are defects in their own tree, found by building against the code rather than reading it.
+**[ai-dynamo/aiperf](https://github.com/ai-dynamo/aiperf)** · two merged, more open<br>
+Merged: [#1340](https://github.com/ai-dynamo/aiperf/pull/1340), a CLI test that asserted across a Rich line wrap, and [#1350](https://github.com/ai-dynamo/aiperf/pull/1350), which probes the NVML energy counter once instead of failing silently. Open: making `crick` optional so `pip install aiperf` needs no C toolchain on aarch64, and a host-telemetry collector category with a RAPL backend, because a CPU-only run currently reports no energy at all. Two of the open PRs are defects in their own tree, found by building against the code rather than reading it.
 
 **[ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp)** and **[vllm-project/vllm](https://github.com/vllm-project/vllm)** · issues<br>
 Measurement-backed bug reports, including an effective-bandwidth characterisation of Arm decode. Engineers with different hardware have reproduced several of them in-thread, on a 5090 and on server parts.
 
 **[Journal of Open Source Software](https://joss.theoj.org/)** · reviewer<br>
-Reviewing submissions, which so far has meant finding a sign error in a published MALA sampler and five merged fixes to the package under review.
+Reviewing submissions, which so far has meant finding a sign error in a published MALA sampler and six merged fixes to the package under review. One reviewed paper is published: [doi:10.21105/joss.11187](https://doi.org/10.21105/joss.11187).
+
+**[ATC '26 Artifact Evaluation Committee](https://sysartifacts.github.io/atc2026/committee)** · member<br>
+Two artifact reviews delivered, on 27 September and 2 October 2026.
 
 ---
 
