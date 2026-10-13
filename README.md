@@ -28,13 +28,13 @@ Twelve CUDA kernels and a Triton implementation of the batch-1 decode GEMV over 
 Each one ships its data, its harness, and a DOI.
 
 **[The memory wall at the edge of language](https://github.com/manunicholasjacob/edge-llm-memory-wall)** · [`zenodo.21844855`](https://doi.org/10.5281/zenodo.21844855)<br>
-Edge LLM decode is bandwidth-bound at R² = 0.994, and the KV cache hits a capacity wall well before compute does.
+Edge LLM decode is bandwidth-bound, with one roofline fitting all seven measured configurations at R² = 0.98 on Arm and on x86, and the KV cache hits a capacity wall well before compute does.
 
 **[The break-even parallel speedup](https://github.com/manunicholasjacob/edge-breakeven-speedup)** · [`zenodo.21987261`](https://doi.org/10.5281/zenodo.21987261)<br>
-Multithreading saves energy exactly when parallel speedup beats the power ratio. Across 831 PMIC-measured runs the power ratio is a board constant and the speedup is a model property, which is what makes the rule usable.
+Multithreading saves energy exactly when parallel speedup beats the power ratio. Measuring the static power floor at every operating point shows the answer turns on whether the board's idle power is charged to the inference.
 
 **[Your quantization format is not free](https://github.com/manunicholasjacob/edge-format-tax)** · [`zenodo.21938812`](https://doi.org/10.5281/zenodo.21938812)<br>
-Same size, same label, different speed. Provenance changes the layout inside a GGUF file, and format rankings do not transfer between cores.
+What a GGUF label does and does not tell you about the file: at small model sizes the label is not the bit rate, and the community-default format pays a measurable cost on every core tested.
 
 **[The cold-start tax](https://github.com/manunicholasjacob/edge-cold-start-tax)** · [`zenodo.21844857`](https://doi.org/10.5281/zenodo.21844857)<br>
 What a duty-cycled wake actually costs, and the eviction cliff sitting behind it.
@@ -49,8 +49,8 @@ What one flipped bit does to a quantized model, and where in the file it has to 
 **[NVIDIA/garak](https://github.com/NVIDIA/garak)** · three merged<br>
 A `config_root` fix in `goodside.RileyIsnt`, an ASCII-selection guard in `badchars`, and a restored unreachable-error path in `load_plugin`. The first shipped in garak v0.16.0.
 
-**[ai-dynamo/aiperf](https://github.com/ai-dynamo/aiperf)** · two merged, more open<br>
-Merged: [#1340](https://github.com/ai-dynamo/aiperf/pull/1340), a CLI test that asserted across a Rich line wrap, and [#1350](https://github.com/ai-dynamo/aiperf/pull/1350), which probes the NVML energy counter once instead of failing silently. Open: making `crick` optional so `pip install aiperf` needs no C toolchain on aarch64, and a host-telemetry collector category with a RAPL backend, because a CPU-only run currently reports no energy at all. Two of the open PRs are defects in their own tree, found by building against the code rather than reading it.
+**[ai-dynamo/aiperf](https://github.com/ai-dynamo/aiperf)** · four merged, more open<br>
+Merged: [#1340](https://github.com/ai-dynamo/aiperf/pull/1340), a CLI test that asserted across a Rich line wrap; [#1350](https://github.com/ai-dynamo/aiperf/pull/1350), which probes the NVML energy counter once instead of failing silently; [#1320](https://github.com/ai-dynamo/aiperf/pull/1320), which makes `crick` optional so `pip install aiperf` needs no C toolchain on aarch64; and [#1470](https://github.com/ai-dynamo/aiperf/pull/1470), which keeps log lines a Windows console cannot encode. Open: a host-telemetry collector category with a RAPL backend, because a CPU-only run currently reports no energy at all, and several fixes for defects found by building against the code rather than reading it.
 
 **[ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp)** and **[vllm-project/vllm](https://github.com/vllm-project/vllm)** · issues<br>
 Measurement-backed bug reports, including an effective-bandwidth characterisation of Arm decode. Engineers with different hardware have reproduced several of them in-thread, on a 5090 and on server parts.
@@ -60,7 +60,3 @@ Reviewing submissions, which so far has meant finding a sign error in a publishe
 
 **[ATC '26 Artifact Evaluation Committee](https://sysartifacts.github.io/atc2026/committee)** · member<br>
 Two artifact reviews delivered, on 27 September and 2 October 2026.
-
----
-
-When a result does not survive re-checking I retract it in public and say why, which is why [one of these repositories](https://github.com/manunicholasjacob/rpi5-quantization-benchmark) opens by withdrawing its own headline.
