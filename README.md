@@ -55,6 +55,12 @@ Merged: [#1340](https://github.com/ai-dynamo/aiperf/pull/1340), a CLI test that 
 **[Arm Learning Paths](https://github.com/ArmDeveloperEcosystem/arm-learning-paths)** · two merged<br>
 [#3848](https://github.com/ArmDeveloperEcosystem/arm-learning-paths/pull/3848), a Learning Path on measuring whether LLM decode is memory-bound on an Arm CPU: the board's read ceiling, a llama.cpp sweep over model sizes and thread counts, and a llama-roofline diagnosis, with every output block taken from one Raspberry Pi 5 capture run. Merged 12 October 2026; not yet live on learn.arm.com. And [#3898](https://github.com/ArmDeveloperEcosystem/arm-learning-paths/pull/3898), which separates the Debian and Raspberry Pi OS source-build dependencies in the perf install guide, merged 13 October 2026.
 
+**[raspberrypi/utils](https://github.com/raspberrypi/utils)** · one merged<br>
+[#220](https://github.com/raspberrypi/utils/pull/220), the `vcgencmd` man page for the Pi 5 PMIC commands (`pmic_read_adc`, `measure_temp pmic`) and a corrected exit status. Merged 14 October 2026.
+
+**[k3d-io/k3d](https://github.com/k3d-io/k3d)** · one merged<br>
+[#1729](https://github.com/k3d-io/k3d/pull/1729), a docs guide for the K3s embedded registry mirror (Spegel). Merged 18 October 2026.
+
 **[ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp)** and **[vllm-project/vllm](https://github.com/vllm-project/vllm)** · issues<br>
 Measurement-backed bug reports, including an effective-bandwidth characterisation of Arm decode. Engineers with different hardware have reproduced several of them in-thread, on a 5090 and on server parts.
 
