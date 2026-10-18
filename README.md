@@ -52,8 +52,8 @@ A `config_root` fix in `goodside.RileyIsnt`, an ASCII-selection guard in `badcha
 **[ai-dynamo/aiperf](https://github.com/ai-dynamo/aiperf)** · four merged, more open<br>
 Merged: [#1340](https://github.com/ai-dynamo/aiperf/pull/1340), a CLI test that asserted across a Rich line wrap; [#1350](https://github.com/ai-dynamo/aiperf/pull/1350), which probes the NVML energy counter once instead of failing silently; [#1320](https://github.com/ai-dynamo/aiperf/pull/1320), which makes `crick` optional so `pip install aiperf` needs no C toolchain on aarch64; and [#1470](https://github.com/ai-dynamo/aiperf/pull/1470), which keeps log lines a Windows console cannot encode. Open: a host-telemetry collector category with a RAPL backend, because a CPU-only run currently reports no energy at all, and several fixes for defects found by building against the code rather than reading it.
 
-**[Arm Learning Paths](https://github.com/ArmDeveloperEcosystem/arm-learning-paths)**: one merged<br>
-[#3848](https://github.com/ArmDeveloperEcosystem/arm-learning-paths/pull/3848), a Learning Path on measuring whether LLM decode is memory-bound on an Arm CPU: the board's read ceiling, a llama.cpp sweep over model sizes and thread counts, and a llama-roofline diagnosis, with every output block taken from one Raspberry Pi 5 capture run. Merged 12 October 2026; not yet live on learn.arm.com.
+**[Arm Learning Paths](https://github.com/ArmDeveloperEcosystem/arm-learning-paths)** · two merged<br>
+[#3848](https://github.com/ArmDeveloperEcosystem/arm-learning-paths/pull/3848), a Learning Path on measuring whether LLM decode is memory-bound on an Arm CPU: the board's read ceiling, a llama.cpp sweep over model sizes and thread counts, and a llama-roofline diagnosis, with every output block taken from one Raspberry Pi 5 capture run. Merged 12 October 2026; not yet live on learn.arm.com. And [#3898](https://github.com/ArmDeveloperEcosystem/arm-learning-paths/pull/3898), which separates the Debian and Raspberry Pi OS source-build dependencies in the perf install guide, merged 13 October 2026.
 
 **[ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp)** and **[vllm-project/vllm](https://github.com/vllm-project/vllm)** · issues<br>
 Measurement-backed bug reports, including an effective-bandwidth characterisation of Arm decode. Engineers with different hardware have reproduced several of them in-thread, on a 5090 and on server parts.
@@ -62,4 +62,4 @@ Measurement-backed bug reports, including an effective-bandwidth characterisatio
 Reviewing submissions, which so far has meant finding a sign error in a published MALA sampler and six merged fixes to the package under review. One reviewed paper is published: [doi:10.21105/joss.11187](https://doi.org/10.21105/joss.11187).
 
 **[ATC '26 Artifact Evaluation Committee](https://sysartifacts.github.io/atc2026/committee)** · member<br>
-Two artifact reviews delivered, on 27 September and 2 October 2026.
+Two artifact reviews delivered, on 27 September and 2 October 2026. Committee service complete.
