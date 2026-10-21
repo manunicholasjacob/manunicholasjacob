@@ -61,6 +61,9 @@ Merged: [#1340](https://github.com/ai-dynamo/aiperf/pull/1340), a CLI test that 
 **[k3d-io/k3d](https://github.com/k3d-io/k3d)** · one merged<br>
 [#1729](https://github.com/k3d-io/k3d/pull/1729), a docs guide for the K3s embedded registry mirror (Spegel). Merged 18 October 2026.
 
+**[geerlingguy/pi-overvolt](https://github.com/geerlingguy/pi-overvolt)** · one merged<br>
+[#10](https://github.com/geerlingguy/pi-overvolt/pull/10), which makes `stats.sh` report the measured PMIC `VDD_CORE` voltage next to the requested voltage. Merged 19 October 2026.
+
 **[ggml-org/llama.cpp](https://github.com/ggml-org/llama.cpp)** and **[vllm-project/vllm](https://github.com/vllm-project/vllm)** · issues<br>
 Measurement-backed bug reports, including an effective-bandwidth characterisation of Arm decode. Engineers with different hardware have reproduced several of them in-thread, on a 5090 and on server parts.
 
